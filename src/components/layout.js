@@ -7,12 +7,12 @@ import Midsection from './midsection';
 import Footer from './footer';
 
 const Layout = ({ children }) => (
-	<div>
-		<Helmet />
-		<Header />
-		<Midsection />
-		<Footer />
-	</div>
+  <div>
+    <Helmet />
+    <Header />
+
+    <Footer />
+  </div>
 );
 
 export default Layout;

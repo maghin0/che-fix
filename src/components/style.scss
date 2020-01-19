@@ -1,3 +1,4 @@
+@charset "utf-8";
 // Importing variables
 @import './variables.scss';
 
@@ -5,25 +6,112 @@
 @import '~bulma/bulma.sass';
 
 .gradientBg {
-	display: flex;
-	background: linear-gradient(to right, $primary-color, $secondary-color);
+  display: flex;
+  background: radial-gradient($primary-color, $secondary-color);
 }
 
 .center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
-	display: flex;
-	padding: 1.5rem 1.5rem;
-	line-height: 1.5rem;
-	a {
-		border-bottom: 1px solid;
-		color: black;
-	}
-	a:hover {
-		color: $secondary-color;
-	}
+  display: flex;
+  padding: 1.5rem 1.5rem;
+  line-height: 1.5rem;
+  a {
+    border-bottom: 1px solid;
+    color: black;
+  }
+  a:hover {
+    color: $secondary-color;
+  }
+}
+.navItem {
+  color: #f4efef;
+}
+
+.mainCheTxt {
+  font-size: 6vw;
+  z-index: 0;
+  letter-spacing: 0.15em;
+  padding-left: 3rem;
+}
+
+.pagebg {
+  background-color: $third-color;
+}
+
+.upTxt {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+.cheIMG {
+  position: relative;
+
+  display: inline-block; /* Make the width of box same as image */
+}
+
+.cheIMG .snumber {
+  position: absolute;
+
+  font-size: 6vw;
+
+  z-index: 1;
+
+  margin: 0 auto;
+
+  left: 75%;
+
+  right: 0;
+
+  top: -10%; /* Adjust this value to move the positioned div up and down */
+
+  text-align: center;
+
+  width: 60%; /* Set the width of the positioned div */
+}
+
+.cheIMG .textv {
+  position: absolute;
+
+  z-index: 1;
+
+  margin: 0 auto;
+
+  left: -100%;
+
+  right: 0;
+
+  top: 80%; /* Adjust this value to move the positioned div up and down */
+
+  text-align: center;
+
+  width: 20%; /* Set the width of the positioned div */
+  writing-mode: sideways-lr;
+
+  text-orientation: mixed;
+}
+.hero {
+  &-has-background {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-background {
+    position: absolute;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-is-transparent {
+    opacity: 0.3;
+  }
+}
+.footercenter {
+  margin-left: 12.5%;
 }

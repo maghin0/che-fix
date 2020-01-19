@@ -1,51 +1,34 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
 
 import './style.scss';
-
-import gatsbyLogo from '../images/gatsby-icon.png';
-import bulmaLogo from '../images/bulma-logo.png';
+import cheMoon from '../images/cheMoon.png';
 import Navbar from './navbar';
 
-const Header = ({ siteTitle }) => (
-	<section className="hero gradientBg is-fullheight-with-navbar">
-		<Navbar />
-		<div className="hero-body">
-			<div className="container center">
-				<article className="media">
-					<figure className="is-left">
-						<span className="icon is-large ">
-							<img src={gatsbyLogo} alt="gatsby-logo" />
-						</span>
-					</figure>
-					<figure className="is-left">
-						<span className="icon is-large">
-							<img src={bulmaLogo} alt="bulma-logo" />
-						</span>
-					</figure>
-					<div className="media-content">
-						<div className="content">
-							<h1 className="is-uppercase is-size-1 has-text-white">
-								Hello from Bulma + Gatsby
-							</h1>
-							<p className="subtitle has-text-white is-size-3">
-								A Bulma CSS + GatsbyJS Starter Kit{' '}
-								<a
-									className="button is-info is-inverted"
-									href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-								>
-									<span className="icon">
-										<FaGithub size="fa-2x" />
-									</span>
-									<span>Download</span>
-								</a>
-							</p>
-						</div>
-					</div>
-				</article>
-			</div>
-		</div>
-	</section>
+const Header = () => (
+  <section className="hero  is-fullheight has-background ">
+    <div className="hero-head is-primary ">
+      <Navbar />
+    </div>
+    <img
+      className=" hero-background gradientBg"
+      src={cheMoon}
+      alt="che holding the moon"
+      style={{
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        width: '100%',
+        height: '100%',
+        zIndex: -1
+      }}
+    />
+
+    <div className=" hero-body ">
+      <div className="mainCheTxt column is-2 is-offset-8 is-uppercase has-text-weight-bold is-family-sans-serif has-text-white">
+        I Am Che Yen
+      </div>
+    </div>
+  </section>
 );
 
 export default Header;
