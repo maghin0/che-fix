@@ -24,7 +24,7 @@ const Footer = () => (
       <footer className=" footer center has-background-light">
         <div className="column ">
           <div className="column is-flex center">
-            <img src={Get} />
+            <img src={Get} alt="get in touch" />
           </div>
           <br />
           <br />
@@ -83,7 +83,11 @@ const Footer = () => (
                   <div className="field column is-two-fifths">
                     <input className="input" type="email" placeholder="Email" />
                   </div>
-                  <img src={submit} className="column is-offset-1" />
+                  <img
+                    src={submit}
+                    alt="submit"
+                    className="column is-offset-1"
+                  />
                 </p>
               </p>
             </div>

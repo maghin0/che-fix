@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
 import { Link } from 'gatsby';
 import './style.scss';
 import instagramLogo from '../images/instagram-icon.png';
@@ -11,7 +10,7 @@ const Navbar = () => (
         <div className="navbar-brand">
           <a
             className="navbar-item"
-            href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
+            href="https://www.instagram.com/im.cheyen/"
           >
             <img src={instagramLogo} alt="Logo-1" />
           </a>
