@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import './style.scss';
-import instagramLogo from '../images/instagram-icon.png';
+import './../assets/sass/style.scss';
+import instagramLogo from '../assets/images/instagram-icon.png';
 
 const Navbar = () => (
   <div className="hero-head is-hidden-mobile">
@@ -16,7 +16,7 @@ const Navbar = () => (
           </a>
         </div>
         <div id="navbarMenuHeroA" className="navbar-menu">
-          <div className="navbar-end">
+          <div className=" montserratregular navbar-end">
             <span className="navbar-item ">
               <p>
                 <Link

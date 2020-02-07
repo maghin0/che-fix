@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './style.scss';
+import './../assets/sass/style.scss';
 
 const Vshoot = props => (
   <div>
@@ -9,47 +9,43 @@ const Vshoot = props => (
     is-medium pagebg"
     >
       <div className="container hero-body " style={{ paddingBottom: 0 }}>
-        <div className="columns is-centered">
+        <div className="columns is-mobile is-centered">
           <div className="vl "></div>
           <div className="column is-two-thirds">
-            <figure class="  image  ">
-              <div className="cheIMG">
-                <h1 className=" has-text-weight-bold has-text-left  title">
-                  Blanchard Tribal <p className="subtitle"> photoshoot</p>
+            <figure className="  image  ">
+              <div className="che-img">
+                <h1 className=" has-text-left archivo_blackregular shoot-title">
+                  Blanchard Tribal <p className="subtitle"> Photoshoot</p>
                 </h1>
-                <h1 className="  has-text-weight-bold is-family-monospace snumber">
+                <h1 className=" archivo_blackregular snumber">
                   {props.number}
                 </h1>
 
-                <img
-                  className=" chePNG"
-                  src={props.img}
-                  alt="Che indian-traditional look"
-                />
-                <h1 className="columns textv">
+                <img src={props.img} alt="Che indian-traditional look" />
+                <h1 className="columns is-mobile textv">
                   <p className="column  is-one-third">
-                    <p className=" has-text-grey-light has-text-left">
+                    <p className=" montserratregular has-text-grey-light has-text-left">
                       {' '}
                       Photographer
                     </p>
 
-                    <p>Simple Simon Says </p>
+                    <p className=" montserratmedium ">Simple Simon Says </p>
                   </p>
                   <p className="column textvspace is-one-third">
-                    <p className=" has-text-grey-light has-text-left">
+                    <p className=" montserratregular has-text-grey-light has-text-left">
                       {' '}
                       Photographer
                     </p>
 
-                    <p>Simple Simon Says </p>
+                    <p className=" montserratmedium "> Simple Simon Says </p>
                   </p>
                   <p className="column textvspace is-one-third">
-                    <p className=" has-text-grey-light has-text-left">
+                    <p className=" montserratregular has-text-grey-light has-text-left">
                       {' '}
                       Photographer
                     </p>
 
-                    <p>Simple Simon Says </p>
+                    <p className=" montserratmedium ">Simple Simon Says </p>
                   </p>
                 </h1>
               </div>
@@ -57,10 +53,39 @@ const Vshoot = props => (
           </div>
         </div>
       </div>
-      <div className=" columns is-gapless  " style={{ marginTop: 100 }}>
-        <div className="column is-6 gradientBg">
-          <div className="  ">
-            <h1>About the shoot</h1>
+      <div
+        className=" columns is-mobile is-gapless  "
+        style={{ marginTop: 100 }}
+      >
+        <div className="column  is-6 banner-bg">
+          <div className="columns is-centered ">
+            <div className="column is-2 "></div>
+            <div className=" column  section is-medium ">
+              <div className="has-text-white">
+                <div className="primetimeregular">
+                  <h1
+                    className="column is-2 title-abt"
+                    style={{ lineHeight: 1.2 }}
+                  >
+                    ABOUT THE SHOOT
+                  </h1>
+                </div>
+
+                <div className=" column is-6 ">
+                  <h6 className="montserratmedium has-text-justified has-text-white subtitle ">
+                    Taiwanese/American model. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud. <br />
+                    Exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                  </h6>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="column">

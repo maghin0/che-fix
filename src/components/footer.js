@@ -1,11 +1,11 @@
 import React from 'react';
 import { FaInstagram, FaMapMarkerAlt, FaMailBulk } from 'react-icons/fa';
-import { IoIosPhonePortrait } from 'react-icons/io';
+import { IoIosPhonePortrait, IoIosMail } from 'react-icons/io';
 import { StaticQuery, graphql } from 'gatsby';
-import './style.scss';
+import './../assets/sass/style.scss';
 
-import Get from '../images/get-in-touch.png';
-import submit from '../images/submit.png';
+import Get from '../assets/images/get-in-touch.png';
+import submit from '../assets/images/submit.png';
 
 const Footer = () => (
   <StaticQuery
@@ -23,7 +23,7 @@ const Footer = () => (
     render={data => (
       <footer className=" footer center has-background-light">
         <div className="column ">
-          <div className="column is-flex center">
+          <div className="column  center">
             <img src={Get} alt="get in touch" />
           </div>
           <br />
@@ -31,9 +31,7 @@ const Footer = () => (
           <div className="columns is-mobile ">
             <div className="column center is-two-fifths footercenter">
               <p className="bd-notification is-info">
-                <p className="is-size-3" style={{ marginLeft: 10 }}>
-                  CONTACT
-                </p>
+                <p className=" primetimeregular is-size-3">CONTACT</p>
                 <br />
                 <p className="is-size-4">
                   <a href={data.site.siteMetadata.instagram}>
@@ -41,17 +39,27 @@ const Footer = () => (
                       <span className="icon is-medium">
                         <FaInstagram />
                       </span>
-                      <p style={{ marginLeft: 10 }}>Im.cheyen</p>
+                      <p
+                        className="montserratmedium is-size-4  has-text-grey-dark"
+                        style={{ marginLeft: 10 }}
+                      >
+                        Im.cheyen
+                      </p>
                     </figure>
                   </a>
                 </p>
-                <p className="is-size-4">
+                <p className="is-size-4 has-text-grey-dark">
                   <a href={data.site.siteMetadata.taiwan}>
                     <figure className="media">
                       <span className="icon is-medium">
                         <FaMapMarkerAlt />
                       </span>
-                      <p style={{ marginLeft: 10 }}>Taipei, Taiwan</p>
+                      <p
+                        className="montserratmedium is-size-4 has-text-grey-dark"
+                        style={{ marginLeft: 10 }}
+                      >
+                        Taipei, Taiwan
+                      </p>
                     </figure>
                   </a>
                 </p>
@@ -61,7 +69,12 @@ const Footer = () => (
                       <span className="icon is-medium">
                         <IoIosPhonePortrait />
                       </span>
-                      <p style={{ marginLeft: 10 }}>231-6574</p>
+                      <p
+                        className="montserratmedium is-size-4 has-text-grey-dark"
+                        style={{ marginLeft: 10 }}
+                      >
+                        231-6574
+                      </p>
                     </figure>
                   </a>
                 </p>
@@ -69,9 +82,14 @@ const Footer = () => (
                   <a href={data.site.siteMetadata.taiwan}>
                     <figure className="media">
                       <span className="icon is-medium">
-                        <FaMailBulk />
+                        <IoIosMail />
                       </span>
-                      <p style={{ marginLeft: 10 }}>Che@mail.com</p>
+                      <p
+                        className="montserratmedium is-size-4 has-text-grey-dark"
+                        style={{ marginLeft: 10 }}
+                      >
+                        Che@mail.com
+                      </p>
                     </figure>
                   </a>
                 </p>
@@ -80,14 +98,18 @@ const Footer = () => (
             <div className="column is-half ">
               <p className="bd-notification is-info">
                 <p className="is-size-6">
-                  <div className="field column is-two-fifths">
-                    <input className="input" type="email" placeholder="Email" />
+                  <div className="field column is-6">
+                    <input
+                      className="input has-margin"
+                      type="email"
+                      placeholder="Email"
+                    />
+                    <img
+                      src={submit}
+                      alt="submit"
+                      className=" is-pulled-right"
+                    />
                   </div>
-                  <img
-                    src={submit}
-                    alt="submit"
-                    className="column is-offset-1"
-                  />
                 </p>
               </p>
             </div>

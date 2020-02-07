@@ -8,7 +8,7 @@ import {
   FaOsi
 } from 'react-icons/fa';
 
-import './style.scss';
+import './../assets/sass/style.scss';
 import Emoji from './emoji';
 import Vshoot from './vshoot';
 
@@ -16,7 +16,7 @@ const Midsection = () => (
   <div>
     <section className="section">
       <div className="container">
-        <div className="columns is-multiline">
+        <div className="columns is-mobile is-multiline">
           <div className="column is-one-third">
             <article className="media">
               <figure className="media-left">
@@ -85,8 +85,8 @@ const Midsection = () => (
                   <h1 className="title is-size-4">Responsive Design</h1>
                   <p className="subtitle is-size-5">
                     Bulma is based on the Flexbox model and built with Sass. The
-                    simplest grid system Just add columns, they will resize
-                    themselves, like this website.
+                    simplest grid system Just add columns is-mobile, they will
+                    resize themselves, like this website.
                   </p>
                 </div>
               </div>
