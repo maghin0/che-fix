@@ -2,14 +2,14 @@ module.exports = {
   siteMetadata: {
     title: 'Che Yen',
     author: 'maghin',
-    imageUrl: 'https://i.imgur.com/Vz81GEl.png',
+    imageUrl: 'src/assets/images/chejungle.jpg',
     description:
       'Modeling is my passion, I have been at it and will own my own clothing brand',
     keywords: `Model, Designer, photography, photo shoot, art, brand, clothing, style, fashion,  `,
     twitter: 'https://twitter.com',
     instagram: 'https://www.instagram.com/im.cheyen/',
     taiwan: 'https://bit.ly/2EOO2nJ',
-    siteUrl: `https://che-yen.netlify.com`
+    siteUrl: `https://che.netlify.com`
   },
   plugins: [
     'gatsby-plugin-react-helmet',

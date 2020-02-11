@@ -54,7 +54,7 @@ function SlideShow() {
           key={node.id}
           alt={node.name.replace(/-/g, ' ').substring(2)}
         />
-        <div className="columns is-2 ">
+        {/* <div className="columns is-2 ">
           <div className="column tt" onClick={() => handlePrevious()}>
             {' '}
             vava
@@ -65,7 +65,7 @@ function SlideShow() {
             {' '}
             dadadadadada
           </div>
-        </div>
+        </div> */}
 
         <button onClick={() => handlePrevious()}>Previous</button>
         <button onClick={() => handleNext()}>Next</button>

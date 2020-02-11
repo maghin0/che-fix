@@ -8,8 +8,7 @@ import Navbar from '../components/navbar';
 
 import chejungle from '../assets/images/chejungle.jpg';
 import chejungle1 from '../assets/images/chejungle1.jpg';
-import chejungle2 from '../assets/images/chejungle2.jpg';
-import chejungle3 from '../assets/images/chejungle3.jpg';
+
 import chemotor from '../assets/images/chemotor.jpg';
 import chemotor01 from '../assets/images/chemotor01.jpg';
 import chemotor02 from '../assets/images/chemotor02.jpg';
@@ -19,10 +18,9 @@ const Travel = () => (
   <div>
     <Helmet />
     <Navbar />
-    <Vshoot img={chejungle} number="01" shoot={chejungle2} />
-    <Vshoot img={chejungle} number="01" shoot={chejungle2} />
+    <Vshoot img={chejungle} number="01" shoot={'jungle'} />
     <Hshoot img={chemotor03} number="02" shoot={chemotor01} />
-    <Vshoot img={chejungle1} number="03" shoot={chejungle3} />
+    <Vshoot img={chejungle1} number="03" shoot={'china'} />
     <Hshoot img={chemotor} number="04" shoot={chemotor02} />
     <Footer />
   </div>
