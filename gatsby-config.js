@@ -17,7 +17,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
+        path: `${__dirname}/src/assets/images`
       }
     },
     'gatsby-transformer-sharp',
@@ -25,17 +25,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Che Yen',
+        name: 'Che-Yen',
         short_name: 'Che',
         start_url: '/',
         background_color: '#2980b9',
         theme_color: '#2980b9',
         display: 'standalone',
-        icon: 'src/images/cheMoon.png',
+        icon: 'src/assets/images/cheMoon.png',
         orientation: 'landscape'
       }
     },
     `gatsby-plugin-sass`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -44,6 +45,7 @@ module.exports = {
         anonymize: true
       }
     },
+
     `gatsby-plugin-sitemap`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline

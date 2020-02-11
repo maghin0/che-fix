@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaInstagram, FaMapMarkerAlt, FaMailBulk } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
+
+import { FaInstagram, FaMapMarkerAlt } from 'react-icons/fa';
 import { IoIosPhonePortrait, IoIosMail } from 'react-icons/io';
 import { StaticQuery, graphql } from 'gatsby';
 import './../assets/sass/style.scss';
@@ -35,67 +37,75 @@ const Footer = () => (
                 <br />
                 <p className="is-size-4">
                   <a href={data.site.siteMetadata.instagram}>
-                    <figure className="media">
-                      <span className="icon is-medium">
-                        <FaInstagram />
-                      </span>
-                      <p
-                        className="montserratmedium is-size-4  has-text-grey-dark"
-                        style={{ marginLeft: 10 }}
-                      >
-                        Im.cheyen
-                      </p>
-                    </figure>
+                    <IconContext.Provider value={{ color: '#373636' }}>
+                      <figure className="media">
+                        <span className="icon is-medium ">
+                          <FaInstagram />
+                        </span>
+                        <p
+                          className="montserratmedium is-size-4  has-text-grey-dark"
+                          style={{ marginLeft: 10 }}
+                        >
+                          Im.cheyen
+                        </p>
+                      </figure>
+                    </IconContext.Provider>
                   </a>
                 </p>
                 <p className="is-size-4 has-text-grey-dark">
                   <a href={data.site.siteMetadata.taiwan}>
-                    <figure className="media">
-                      <span className="icon is-medium">
-                        <FaMapMarkerAlt />
-                      </span>
-                      <p
-                        className="montserratmedium is-size-4 has-text-grey-dark"
-                        style={{ marginLeft: 10 }}
-                      >
-                        Taipei, Taiwan
-                      </p>
-                    </figure>
+                    <IconContext.Provider value={{ color: '#373636' }}>
+                      <figure className="media">
+                        <span className="icon is-medium">
+                          <FaMapMarkerAlt />
+                        </span>
+                        <p
+                          className="montserratmedium is-size-4 has-text-grey-dark"
+                          style={{ marginLeft: 10 }}
+                        >
+                          Taipei, Taiwan
+                        </p>
+                      </figure>
+                    </IconContext.Provider>
                   </a>
                 </p>
                 <p className="is-size-4">
                   <a href={data.site.siteMetadata.taiwan}>
-                    <figure className="media">
-                      <span className="icon is-medium">
-                        <IoIosPhonePortrait />
-                      </span>
-                      <p
-                        className="montserratmedium is-size-4 has-text-grey-dark"
-                        style={{ marginLeft: 10 }}
-                      >
-                        231-6574
-                      </p>
-                    </figure>
+                    <IconContext.Provider value={{ color: '#373636' }}>
+                      <figure className="media">
+                        <span className="icon is-medium">
+                          <IoIosPhonePortrait />
+                        </span>
+                        <p
+                          className="montserratmedium is-size-4 has-text-grey-dark"
+                          style={{ marginLeft: 10 }}
+                        >
+                          231-6574
+                        </p>
+                      </figure>
+                    </IconContext.Provider>
                   </a>
                 </p>
                 <p className="is-size-4">
                   <a href={data.site.siteMetadata.taiwan}>
-                    <figure className="media">
-                      <span className="icon is-medium">
-                        <IoIosMail />
-                      </span>
-                      <p
-                        className="montserratmedium is-size-4 has-text-grey-dark"
-                        style={{ marginLeft: 10 }}
-                      >
-                        Che@mail.com
-                      </p>
-                    </figure>
+                    <IconContext.Provider value={{ color: '#373636' }}>
+                      <figure className="media">
+                        <span className="icon is-medium">
+                          <IoIosMail />
+                        </span>
+                        <p
+                          className="montserratmedium is-size-4 has-text-grey-dark"
+                          style={{ marginLeft: 10 }}
+                        >
+                          Che@mail.com
+                        </p>
+                      </figure>
+                    </IconContext.Provider>
                   </a>
                 </p>
               </p>
             </div>
-            <div className="column is-half ">
+            <div className="column is-5 ">
               <p className="bd-notification is-info">
                 <p className="is-size-6">
                   <div className="field column is-6">

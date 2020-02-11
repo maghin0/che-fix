@@ -4,8 +4,46 @@
 // Importing variables
 @import './variables.scss';
 
+@import 'breakpoints';
+
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
+
+// Breakpoints.
+
+@include breakpoints(
+  (
+    xlarge: (
+      1281px,
+      1680px
+    ),
+    large: (
+      981px,
+      1280px
+    ),
+    medium: (
+      737px,
+      980px
+    ),
+    small: (
+      481px,
+      736px
+    ),
+    xsmall: (
+      null,
+      480px
+    )
+  )
+);
+.tt {
+  top: 50%;
+  position: absolute;
+}
+.th {
+  top: 50%;
+  position: absolute;
+  right: 1%;
+}
 .title {
   font-size: 1.5rem;
   &-abt {
@@ -106,7 +144,7 @@
   &-h {
     position: absolute;
 
-    font-size: 6vw;
+    font-size: 6rem;
 
     z-index: -1;
 
@@ -116,7 +154,7 @@
 
     right: 0;
 
-    top: -13%; /* Adjust this value to move the positioned div up and down */
+    top: -10%; /* Adjust this value to move the positioned div up and down */
 
     text-align: center;
 
@@ -157,6 +195,27 @@
 .padding-abt {
   padding: 3rem 0 !important;
 }
+.padding-abt-txt-v {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+  @include breakpoint('<=xlarge') {
+    padding-top: 13pt;
+  }
+
+  @include breakpoint('<=large') {
+    padding-top: 12pt;
+  }
+
+  @include breakpoint('<=small') {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+}
+.padding-abt-title-v {
+  @include breakpoint('<=small') {
+    padding-bottom: 0;
+  }
+}
 .hero {
   &-has-background {
     position: relative;
@@ -184,16 +243,15 @@
 }
 .vl {
   position: absolute;
-  border-left: 4px solid rgb(29, 28, 28);
-  height: 100rem;
+  border-left: 4px solid #373636;
+  height: 63rem;
   right: 12%;
-  top: 16%;
+
   &-h {
     position: absolute;
-    border-left: 4px solid rgb(29, 28, 28);
-    height: 100rem;
-    right: -5%;
-    top: 16%;
+    border-left: 4px solid #373636;
+    height: 61rem;
+    right: -3%;
   }
 }
 

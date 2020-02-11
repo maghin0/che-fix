@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './../assets/sass/style.scss';
-import chemoon from '../assets/images/cheMoon.png';
+import chemoon from '../assets/images/cheMoon.webp';
 import aboutme from '../assets/images/aboutme.png';
 import blue from '../assets/images/blue.png';
 
@@ -15,7 +15,7 @@ const Header = () => (
       </div>
 
       <img
-        className=" puff-in-center che-img hero-background"
+        className=" puff-in-center che-img hero-background "
         src={chemoon}
         alt="che holding the moon"
         style={{
@@ -25,11 +25,7 @@ const Header = () => (
           height: '100%'
         }}
       />
-      <img
-        className="  hero-background"
-        src={blue}
-        alt="che holding the moon"
-      />
+      <img className="hero-background " src={blue} alt="che holding the moon" />
 
       <div className="  hero-body columns is-mobile ">
         <div className="  primetimeregular banner-text  column is-1 is-offset-8 is-uppercase has-text-weight-bold primetime has-text-white tracking-in-contract-bck-top">
@@ -44,21 +40,22 @@ const Header = () => (
       <div className="hero-body">
         <div className="container">
           <div className="columns is-mobile ">
-            <div className="column">
+            <div className="column is-6">
               <img
                 src={aboutme}
                 alt="About me section"
                 className="is-pulled-right"
               />
             </div>
-            <div className=" montserratmedium column ">
-              <h1 className="title">
+            <div className=" montserratmedium column is-4 has-text-justified">
+              <h1 className="is-size-6 is-size-7-mobile">
                 Taiwanese/American model. Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                 nostrud.
               </h1>
-              <h2 className="subtitle">
+              <br />
+              <h2 className="is-size-6 is-size-7-mobile">
                 Exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. Duis aute irure dolor in reprehenderit in voluptate
                 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
@@ -67,6 +64,7 @@ const Header = () => (
               </h2>
             </div>
           </div>
+          <div className="column is-2"></div>
         </div>
       </div>
     </section>

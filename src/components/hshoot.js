@@ -14,10 +14,11 @@ const Hshoot = props => (
           <div className="column ">
             <figure className="  image  ">
               <div className=" che-img">
-                <h1 className=" has-text-left archivo_blackregular shoot-title">
-                  Blanchard Tribal <p className="subtitle"> Photoshoot</p>
+                <h1 className=" has-text-left archivo_blackregular shoot-title is-size-4-mobile">
+                  Blanchard Tribal{' '}
+                  <p className="subtitle is-size-7-mobile">Photoshoot</p>
                 </h1>
-                <h1 className=" archivo_blackregular snumber-h ">
+                <h1 className=" archivo_blackregular snumber-h is-size-2-mobile ">
                   {props.number}
                 </h1>
 
@@ -27,8 +28,8 @@ const Hshoot = props => (
                   alt=" Che indian-traditional look"
                 />
                 <br />
-                <h1 className="columns is-mobile">
-                  <p className="column is-one-third">
+                <h1 className="columns is-mobile is-size-6-mobile">
+                  <p className="column is-one-third ">
                     <p className=" montserratregular has-text-grey-light has-text-right">
                       {' '}
                       Photographer
@@ -65,7 +66,7 @@ const Hshoot = props => (
         </div>
       </div>
 
-      <div className="">
+      <div className=" column is-mobile">
         <div
           className="image "
           style={{ margin: 150, marginBottom: 0, marginTop: 0 }}
@@ -79,7 +80,7 @@ const Hshoot = props => (
             <div className="columns is-mobile ">
               <div className=" primetimeregular column is-offset-2 is-3">
                 <h1
-                  className="  has-text-white  has-text-right is-pulled right title-abt"
+                  className="  has-text-white  has-text-right is-pulled right title-abt is-size-3-mobile"
                   style={{ lineHeight: 1.2 }}
                 >
                   ABOUT THE SHOOT
@@ -87,7 +88,7 @@ const Hshoot = props => (
               </div>
 
               <div className=" column is-offset-1 is-5 montserratmedium  ">
-                <h1 className="subtitle  has-text-white  has-text-justified 	">
+                <h1 className="is-size-5 is-size-7-mobile has-text-white  has-text-justified 	">
                   Taiwanese/American model. Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,

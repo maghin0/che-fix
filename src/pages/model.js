@@ -19,9 +19,9 @@ const Model = () => (
   <div>
     <Helmet />
     <Navbar />
-    <Vshoot img={chejungle} number="01" shoot={chejungle2} />
+    <Vshoot img={chejungle} number="01" shoot={'jungle'} />
     <Hshoot img={chemotor03} number="02" shoot={chemotor01} />
-    <Vshoot img={chejungle1} number="03" shoot={chejungle3} />
+    <Vshoot img={chejungle1} number="03" shoot={'china'} />
     <Hshoot img={chemotor} number="04" shoot={chemotor02} />
     <Footer />
   </div>

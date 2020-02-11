@@ -16,7 +16,8 @@ import chemotor03 from '../assets/images/chemotor03.jpg';
 const IndexPage = () => (
   <div>
     <Layout />
-    <Vshoot img={chejungle} number="01" shoot={chejungle2} />
+    <Vshoot img={chejungle} number="01" shoot={'jungle'} />
+    <Hshoot img={chemotor} number="02" shoot={chemotor01} />
     <Footer />
   </div>
 );
