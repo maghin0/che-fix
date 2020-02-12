@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Che Yen',
+    title: 'Che-Yen',
     author: 'maghin',
     imageUrl: 'src/assets/images/chejungle.jpg',
     description:
