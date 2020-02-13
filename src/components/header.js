@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './../assets/sass/style.scss';
-import chemoon from '../assets/images/cheMoon.webp';
+import chemoon from '../assets/images/cheMoon.png';
 import aboutme from '../assets/images/aboutme.png';
 import blue from '../assets/images/blue.png';
 

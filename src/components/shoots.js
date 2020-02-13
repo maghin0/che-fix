@@ -1,7 +1,10 @@
+import jungle from './jungle';
+import china from './china';
+
 let Shoots = {};
 
-Shoots['jungle'] = require('./jungle').default;
+Shoots['jungle'] = jungle;
 
-Shoots['china'] = require('./china').default;
+Shoots['china'] = china;
 
 export default Shoots;

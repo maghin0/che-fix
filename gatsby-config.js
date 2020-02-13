@@ -31,7 +31,7 @@ module.exports = {
         background_color: '#2980b9',
         theme_color: '#2980b9',
         display: 'standalone',
-        icon: 'src/assets/images/cheMoon.png',
+        icon: 'src/assets/images/bluemoon.png',
         orientation: 'landscape'
       }
     },
