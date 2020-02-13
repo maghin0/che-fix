@@ -8,7 +8,7 @@ module.exports = {
     keywords: `Model, Designer, photography, photo shoot, art, brand, clothing, style, fashion,  `,
     twitter: 'https://twitter.com',
     instagram: 'https://www.instagram.com/im.cheyen/',
-    siteUrl: `https://che.netlify.com`
+    siteUrl: `https://needstobetheproductionurl.com`
   },
   plugins: [
     'gatsby-plugin-react-helmet',
