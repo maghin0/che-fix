@@ -36,7 +36,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-sass`,
-    `gatsby-plugin-smoothscroll`,
+
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
