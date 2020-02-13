@@ -8,7 +8,6 @@ module.exports = {
     keywords: `Model, Designer, photography, photo shoot, art, brand, clothing, style, fashion,  `,
     twitter: 'https://twitter.com',
     instagram: 'https://www.instagram.com/im.cheyen/',
-    taiwan: 'https://bit.ly/2EOO2nJ',
     siteUrl: `https://che.netlify.com`
   },
   plugins: [
