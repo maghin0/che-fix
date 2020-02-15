@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import './../assets/sass/style.scss';
-import instagramLogo from '../assets/images/instagram-icon.png';
+import instagramLogo from '../assets/images/insta-icon.png';
 
 const Navbar = () => (
   <div className="hero-head is-hidden-mobile">
