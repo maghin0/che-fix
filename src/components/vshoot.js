@@ -1,22 +1,58 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import { FaInstagram } from 'react-icons/fa';
 
-import Shoots from './shoots';
+import Shoots from './carousel-imgs/shoots';
 import './../assets/sass/style.scss';
 
 const Vshoot = props => {
   var type = props.shoot;
 
   const ShootToRender = Shoots[type];
+  const imgName = props.imgName;
+  const data = useStaticQuery(graphql`
+    fragment Vertical on File {
+      childImageSharp {
+        fluid(maxWidth: 1080) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
+    query {
+      chejungle: file(relativePath: { eq: "chejungle.jpg" }) {
+        ...Vertical
+      }
+
+      chechina: file(relativePath: { eq: "chechina.jpg" }) {
+        ...Vertical
+      }
+
+      chepark: file(relativePath: { eq: "chepark.jpg" }) {
+        ...Vertical
+      }
+
+      chelights: file(relativePath: { eq: "chelights.jpg" }) {
+        ...Vertical
+      }
+
+      cheorange: file(relativePath: { eq: "cheorange.jpg" }) {
+        ...Vertical
+      }
+    }
+  `);
+
   return (
     <div>
       <section
         className=" hero 
     is-medium pagebg"
       >
-        <div className="container hero-body " style={{ paddingBottom: 0 }}>
+        <div className=" hero-body " style={{ paddingBottom: 0 }}>
           <div className="columns is-mobile is-centered">
             <div className="vl "></div>
-            <div className="column is-two-thirds">
+            <div className="column is-two-fifths">
               <figure className="  image  ">
                 <div className="che-img">
                   <h1 className=" has-text-left archivo_blackregular shoot-title is-size-4-mobile">
@@ -26,8 +62,10 @@ const Vshoot = props => {
                   <h1 className=" archivo_blackregular snumber is-size-1-mobile">
                     {props.number}
                   </h1>
-
-                  <img src={props.img} alt="Che indian-traditional look" />
+                  <Img
+                    fluid={data[imgName].childImageSharp.fluid}
+                    className="shadow-img"
+                  />
                   <h1 className="columns is-mobile textv is-size-7-mobile">
                     <p className="column  is-one-third">
                       <p className=" montserratregular has-text-grey-light has-text-left">
@@ -99,6 +137,9 @@ const Vshoot = props => {
           </div>
           <div className="column">
             <div className="image ">
+              <span className="icon is-medium ">
+                <FaInstagram />
+              </span>
               <ShootToRender />
             </div>
           </div>

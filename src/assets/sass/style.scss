@@ -10,7 +10,10 @@
 @import '~bulma/bulma.sass';
 
 // Breakpoints.
-
+html {
+  scrollbar-color: #f9f0f0; /* thumb and track color */
+  scrollbar-width: thin;
+}
 @include breakpoints(
   (
     xlarge: (
@@ -164,7 +167,7 @@
 .che-img {
   position: relative;
   z-index: +3 !important;
-  display: block; /* Make the width of box same as image */
+  display: block !important; /* Make the width of box same as image */
 }
 .che-img .textv {
   position: absolute;
@@ -245,13 +248,13 @@
   position: absolute;
   border-left: 4px solid #373636;
   height: 63rem;
-  right: 12%;
+  right: 19%;
 
   &-h {
     position: absolute;
     border-left: 4px solid #373636;
     height: 61rem;
-    right: -3%;
+    right: 14%;
   }
 }
 

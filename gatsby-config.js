@@ -30,7 +30,7 @@ module.exports = {
         background_color: '#2980b9',
         theme_color: '#2980b9',
         display: 'standalone',
-        icon: 'src/assets/images/bluemoon.png',
+        icon: 'src/assets/images/che-icon1.png',
         orientation: 'landscape'
       }
     },

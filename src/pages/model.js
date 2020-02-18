@@ -6,22 +6,18 @@ import Helmet from '../components/helmet';
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 
-import chejungle from '../assets/images/chejungle.jpg';
-import chejungle1 from '../assets/images/chejungle1.jpg';
-
-import chemotor from '../assets/images/chemotor.jpg';
-import chemotor01 from '../assets/images/chemotor01.jpg';
-import chemotor02 from '../assets/images/chemotor02.jpg';
-import chemotor03 from '../assets/images/chemotor03.jpg';
-
 const Model = () => (
   <div>
     <Helmet />
     <Navbar />
-    <Vshoot img={chejungle} number="01" shoot={'jungle'} />
-    <Hshoot img={chemotor03} number="02" shoot={chemotor01} />
-    <Vshoot img={chejungle1} number="03" shoot={'china'} />
-    <Hshoot img={chemotor} number="04" shoot={chemotor02} />
+    <Vshoot imgName="chejungle" number="01" shoot="jungle" />
+    <Hshoot imgName="chemotor" number="02" shoot="motor" />
+    <Vshoot imgName="chepark" number="03" shoot="park" />
+    <Hshoot imgName="chemotor" number="04" shoot="motor" />
+    <Vshoot imgName="chechina" number="05" shoot="china" />
+    <Vshoot imgName="chelights" number="06" shoot="lights" />
+    <Vshoot imgName="cheorange" number="07" shoot="orange" />
+
     <Footer />
   </div>
 );

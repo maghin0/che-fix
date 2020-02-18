@@ -28,7 +28,7 @@ const Header = () => (
       <img className="hero-background " src={blue} alt="che holding the moon" />
 
       <div className="  hero-body columns is-mobile ">
-        <div className="  primetimeregular banner-text  column is-1 is-offset-8 is-uppercase has-text-weight-bold primetime has-text-white tracking-in-contract-bck-top">
+        <div className="  primetimeregular banner-text  column is-1 is-offset-8 is-mobile is-uppercase has-text-weight-bold primetime has-text-white tracking-in-contract-bck-top">
           <div className="tracking-in-contract-bck-top">I</div>
           <div className="tracking-in-contract-bck-top-1">Am </div>
           <div className="tracking-in-contract-bck-top-2">Che</div>
