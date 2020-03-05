@@ -4,12 +4,12 @@ import Vshoot from '../components/vshoot';
 import Hshoot from '../components/hshoot';
 import Helmet from '../components/helmet';
 import Footer from '../components/footer';
-import Navbar from '../components/navbar';
+import NavbarAll from '../components/navbarall';
 
 const Model = () => (
-  <div>
+  <div className="pagebg">
     <Helmet />
-    <Navbar />
+    <NavbarAll />
     <Vshoot imgName="chejungle" number="01" shoot="jungle" />
     <Hshoot imgName="chemotor" number="02" shoot="motor" />
     <Vshoot imgName="chepark" number="03" shoot="park" />

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaChevronCircleRight, FaChevronCircleLeft } from 'react-icons/fa';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
@@ -28,7 +29,7 @@ function China() {
               id
               name
               childImageSharp {
-                fluid(maxWidth: 1080) {
+                fluid(maxWidth: 1080, quality: 100) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
@@ -67,8 +68,18 @@ function China() {
           </div>
         </div> */}
 
-        <button onClick={() => handlePrevious()}>Previous</button>
-        <button onClick={() => handleNext()}>Next</button>
+        <button
+          onClick={() => handleNext()}
+          className="icon is-large is-pulled-right  iconpos-r "
+        >
+          <FaChevronCircleRight size={64} />
+        </button>
+        <button
+          onClick={() => handlePrevious()}
+          className="icon is-large is-pulled-left  iconpos-l "
+        >
+          <FaChevronCircleLeft size={64} />
+        </button>
       </div>
     </div>
   );

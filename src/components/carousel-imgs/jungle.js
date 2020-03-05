@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaChevronCircleRight, FaChevronCircleLeft } from 'react-icons/fa';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
@@ -45,6 +46,9 @@ function SlideShow() {
     index === length ? setIndex(0) : setIndex(index + 1);
   const handlePrevious = () =>
     index === 0 ? setIndex(length) : setIndex(index - 1);
+
+  // const current = () => index;
+
   const { node } = allFile.edges[index];
   return (
     <div>
@@ -66,9 +70,24 @@ function SlideShow() {
             dadadadadada
           </div>
         </div> */}
+        <button
+          onClick={() => handleNext()}
+          className="icon is-large is-pulled-right  iconpos-r "
+        >
+          <FaChevronCircleRight size={64} />
+        </button>
+        <button
+          onClick={() => handlePrevious()}
+          className="icon is-large is-pulled-left  iconpos-l "
+        >
+          <FaChevronCircleLeft size={64} />
+        </button>
 
-        <button onClick={() => handlePrevious()}>Previous</button>
-        <button onClick={() => handleNext()}>Next</button>
+        {/* <div className="text-align:center">
+          <span className="dot" onClick={() => handlePrevious()}></span>
+          <span className="dot" onClick={() => handlePrevious()}></span>
+          <span className="dot" onClick={() => handlePrevious()}></span>
+        </div> */}
       </div>
     </div>
   );

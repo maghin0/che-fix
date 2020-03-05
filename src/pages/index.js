@@ -6,10 +6,28 @@ import Hshoot from '../components/hshoot';
 import Footer from '../components/footer';
 
 const IndexPage = () => (
-  <div>
+  <div className="pagebg">
     <Layout />
-    <Vshoot imgName="chechina" number="01" shoot="china" />
-    <Hshoot imgName="chemotor" number="02" shoot="motor" />
+    <Vshoot
+      imgName="chechina"
+      number="01"
+      shoot="china"
+      title={'Creative Shoot'}
+      subtitle={'Photoshoot'}
+      client={' Simple Simon Says'}
+      photographer={' Simple Simon Says'}
+      location={' Simple Simon Says'}
+    />
+    <Hshoot
+      imgName="chemotor"
+      number="02"
+      shoot="motor"
+      title={'Creative Shoot'}
+      subtitle={'Photo shoot'}
+      client={' Simple Simon Says'}
+      photographer={' Simple Simon Says'}
+      location={' Simple Simon Says'}
+    />
     <Footer />
   </div>
 );

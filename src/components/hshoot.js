@@ -39,13 +39,16 @@ const Hshoot = props => {
       cheorange: file(relativePath: { eq: "cheorange.jpg" }) {
         ...Horizontal
       }
+      chethailand: file(relativePath: { eq: "chethailand.jpg" }) {
+        ...Horizontal
+      }
     }
   `);
   return (
     <div>
       <section
         className=" hero 
-  is-medium pagebg"
+  is-medium pagebg shoot-margin"
       >
         <div className="  hero-body ">
           <div className="columns is-centered ">
@@ -53,9 +56,8 @@ const Hshoot = props => {
             <div className="column is-7 ">
               <figure className="  image  ">
                 <div className=" che-img">
-                  <h1 className=" has-text-left archivo_blackregular shoot-title is-size-4-mobile">
-                    Blanchard Tribal{' '}
-                    <p className="subtitle is-size-7-mobile">Photoshoot</p>
+                  <h1 className=" has-text-left archivo_blackregular shoot-title ">
+                    Blanchard Tribal <p className="subtitle">Photoshoot</p>
                   </h1>
                   <h1 className=" archivo_blackregular snumber-h is-size-2-mobile ">
                     {props.number}
@@ -66,7 +68,7 @@ const Hshoot = props => {
                     className="shadow-img"
                   />
                   <br />
-                  <h1 className="columns is-mobile is-size-6-mobile">
+                  <h1 className="columns is-mobile texth">
                     <p className="column is-one-third ">
                       <p className=" montserratregular has-text-grey-light has-text-right">
                         {' '}
@@ -120,7 +122,7 @@ const Hshoot = props => {
               <div className="columns is-mobile ">
                 <div className=" primetimeregular column is-offset-2 is-3">
                   <h1
-                    className="  has-text-white  has-text-right is-pulled right title-abt is-size-3-mobile"
+                    className="  has-text-white  has-text-right is-pulled right title-abt is-size-5-mobile"
                     style={{ lineHeight: 1.2 }}
                   >
                     ABOUT THE SHOOT

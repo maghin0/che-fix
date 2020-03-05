@@ -1,34 +1,35 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import './../assets/sass/style.scss';
-import instagramLogo from '../assets/images/insta-icon.png';
+import chelogo from '../assets/images/che-icon.png';
 
 const Navbar = () => (
-  <div className="hero-head is-hidden-mobile">
-    <nav className="navbar is-dark">
+  <div className="hero-head ">
+    <nav className="navbar is-transparent ">
       <div className="container">
         <div className="navbar-brand">
-          <a
-            className="navbar-item"
-            href="https://www.instagram.com/im.cheyen/"
+          <Link
+            to="/"
+            className="navbar-item "
+            style={{ backgroundColor: 'hsl(0, 0%, 29%)' }}
           >
-            <img src={instagramLogo} alt="Logo-1" />
-          </a>
+            <img src={chelogo} alt="Che's Logo" />
+          </Link>
         </div>
         <div id="navbarMenuHeroA" className="navbar-menu">
           <div className=" montserratregular navbar-end">
-            <span className="navbar-item ">
-              <p>
-                <Link
-                  to="/"
-                  className="navItem"
-                  activeStyle={{ color: '#F9F4F4' }}
-                >
-                  Home
-                </Link>
-              </p>
-            </span>
-
+            <Link
+              to="/"
+              className="navItem"
+              activeStyle={{
+                color: '#f9f0f0',
+                backgroundImage: 'linear-gradient(#1e76c4, #1d6eb3 )'
+              }}
+            >
+              <span className="navbar-item ">
+                <p>Home</p>
+              </span>
+            </Link>
             <span className="navbar-item">
               <p>
                 <Link

@@ -4,21 +4,33 @@ import Vshoot from '../components/vshoot';
 import Hshoot from '../components/hshoot';
 import Helmet from '../components/helmet';
 import Footer from '../components/footer';
-import Navbar from '../components/navbar';
-
-import chemotor from '../assets/images/chemotor.jpg';
-import chemotor01 from '../assets/images/motor/motor1.jpg';
-import chemotor02 from '../assets/images/motor/motor2.jpg';
-import chemotor03 from '../assets/images/motor/motor3.jpg';
+import NavbarAll from '../components/navbarall';
 
 const Personal = () => (
-  <div>
+  <div className="pagebg">
     <Helmet />
-    <Navbar />
-    <Vshoot imgName="chejungle" number="01" shoot={'jungle'} />
-    <Hshoot img={chemotor03} number="02" shoot={chemotor01} />
-    <Vshoot imgName="chepark" number="03" shoot={'china'} />
-    <Hshoot img={chemotor} number="04" shoot={chemotor02} />
+    <NavbarAll />
+    <Vshoot
+      imgName="cheplanetearth"
+      number="01"
+      shoot="planetearth"
+      title={'Creative Shoot'}
+      subtitle={'Photo shoot'}
+      client={' Simple Simon Says'}
+      photographer={' Simple Simon Says'}
+      location={' Simple Simon Says'}
+    />
+    <Vshoot
+      imgName="chebesties"
+      number="02"
+      shoot="besties"
+      title={'Creative Shoot'}
+      subtitle={'Photo shoot'}
+      client={' Simple Simon Says'}
+      photographer={' Simple Simon Says'}
+      location={' Simple Simon Says'}
+    />
+    <Hshoot imgName="chemotor" number="04" shoot="motor" />
     <Footer />
   </div>
 );

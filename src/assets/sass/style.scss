@@ -29,15 +29,18 @@ html {
       980px
     ),
     small: (
-      481px,
+      414px,
       736px
     ),
     xsmall: (
       null,
-      480px
+      413px
     )
   )
 );
+.fixa {
+  position: fixed;
+}
 .tt {
   top: 50%;
   position: absolute;
@@ -49,6 +52,7 @@ html {
 }
 .title {
   font-size: 1.5rem;
+
   &-abt {
     font-size: 4rem;
   }
@@ -72,6 +76,12 @@ html {
 .has-margin {
   margin: 2% 0%;
 }
+.banner-mobile {
+  @include breakpoint('<=small') {
+    padding-top: 0px !important;
+    margin-top: -3rem !important;
+  }
+}
 .banner-bg {
   background: radial-gradient($primary-color, $secondary-color) !important;
 }
@@ -81,8 +91,17 @@ html {
   letter-spacing: 0.25em;
   padding-left: 4rem;
   z-index: 0;
-}
+  @include breakpoint('<=small') {
+    font-size: 2rem;
 
+    padding-left: 2rem;
+  }
+}
+.about-me-mobile {
+  @include breakpoint('<=small') {
+    padding-bottom: 0rem !important;
+  }
+}
 .center {
   display: flex;
   justify-content: center;
@@ -120,9 +139,40 @@ html {
 
   left: -5rem;
 
-  top: -3rem; /* Adjust this value to move the positioned div up and down */
+  top: -2.5rem; /* Adjust this value to move the positioned div up and down */
+  @include breakpoint('<=small') {
+    font-size: 1.5rem;
+    left: 0;
+  }
+
   .subtitle {
     font-size: 2rem;
+    @include breakpoint('<=small') {
+      font-size: 0.9rem;
+    }
+  }
+}
+.shoot-background {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  z-index: 0;
+
+  margin: 0 auto;
+
+  left: 0;
+
+  top: 0;
+  background-image: linear-gradient($third-color, transparent);
+  opacity: 0.4;
+  border-radius: 0.3rem;
+  @include breakpoint('<=small') {
+    width: 91.5%;
+    opacity: 0.5;
+  }
+  @include breakpoint('<=xsmall') {
+    width: 90.1%;
+    opacity: 0.5;
   }
 }
 .snumber {
@@ -143,6 +193,14 @@ html {
   text-align: center;
 
   width: 60%; /* Set the width of the positioned div */
+  @include breakpoint('<=small') {
+    left: 65%;
+    top: -8%;
+  }
+  @include breakpoint('<=xsmall') {
+    left: 64%;
+    top: -9%;
+  }
 
   &-h {
     position: absolute;
@@ -162,12 +220,78 @@ html {
     text-align: center;
 
     width: 60%; /* Set the width of the positioned div */
+    @include breakpoint('<=small') {
+      left: 65%;
+      top: -12%;
+    }
   }
 }
+.shoot-margin {
+  margin-top: 3em !important;
+}
+
+.hero-mobile {
+  // position: absolute;
+  // -o-object-fit: cover;
+  // object-fit: cover;
+  // -o-object-position: center center;
+  // object-position: center center;
+  // width: 100%;
+  // height: 100%;
+  @include breakpoint('<=small') {
+    min-height: 31.5vh !important;
+    max-height: 31.5vh !important;
+  }
+}
+.che-hero {
+  position: relative;
+  z-index: +3 !important;
+  display: block !important; /* Make the width of box same as image */
+  max-width: 100%;
+  @include breakpoint('<=small') {
+    object-fit: contain !important;
+
+    object-position: center top !important;
+  }
+}
+.hero-blue {
+  @include breakpoint('<=small') {
+    object-fit: contain !important;
+    object-position: center top !important;
+  }
+}
+// .che-hero-small {
+//   display: none; /* Make the width of box same as image */
+// }
+
+// @media only screen and (max-width: null, 465px) {
+//   //some value
+//   .che-hero {
+//     display: none !important;
+//   }
+
+//   // .che-hero-small {
+//   //   display: block;
+//   //   position: relative;
+//   //   z-index: +3 !important;
+//   //   max-width: 100%;
+//   //   background-size: contain !important;
+//   //   padding-bottom: 0 !important;
+//   //   margin-bottom: 0 !important;
+//   // }
+// }
 .che-img {
   position: relative;
   z-index: +3 !important;
   display: block !important; /* Make the width of box same as image */
+  width: 100%;
+
+  @include breakpoint('<=small') {
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
 }
 .che-img .textv {
   position: absolute;
@@ -188,11 +312,21 @@ html {
   writing-mode: sideways-lr;
 
   text-orientation: mixed;
+  @include breakpoint('<=small') {
+    font-size: 0.5rem;
+    top: 45%;
+    left: -90%;
+  }
+}
+.texth {
+  @include breakpoint('<=small') {
+    font-size: 0.5rem;
+  }
 }
 .shadow-img {
   box-shadow: 0.5rem 0.2rem 1rem 0.5rem rgba(10, 10, 10, 0.1),
     0 10px 0 1px rgba(10, 10, 10, 0.02);
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   padding: 0px;
 }
 .padding-abt {
@@ -245,16 +379,66 @@ html {
   margin-bottom: 10%;
 }
 .vl {
-  position: absolute;
-  border-left: 4px solid #373636;
-  height: 63rem;
-  right: 19%;
-
-  &-h {
+  @include breakpoint('>=medium') {
     position: absolute;
     border-left: 4px solid #373636;
-    height: 61rem;
-    right: 14%;
+    height: 64rem;
+    right: 26%;
+
+    &-h {
+      position: absolute;
+      border-left: 4px solid #373636;
+      height: 61rem;
+      right: 18%;
+    }
+  }
+}
+
+.iconpos {
+  &-l {
+    background-color: transparent;
+    border: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    position: absolute;
+    z-index: +10 !important;
+    left: 1%;
+    top: 50%;
+    opacity: 0.5;
+    :hover {
+      color: white;
+      opacity: 1 !important;
+      cursor: pointer;
+    }
+    @include breakpoint('<=small') {
+      padding: 0.7em !important;
+    }
+  }
+  &-r {
+    background-color: transparent;
+    border: 0 !important;
+    margin: 0 !important;
+    padding: 0;
+
+    position: absolute;
+    right: 1%;
+    z-index: +10 !important;
+    top: 50%;
+    opacity: 0.5;
+    :hover {
+      color: white;
+      opacity: 1 !important;
+      cursor: pointer;
+    }
+    @include breakpoint('<=small') {
+      padding: 0.7em !important;
+    }
+  }
+}
+.get-in-touch {
+  @include breakpoint('<=small') {
+    padding-bottom: 0;
   }
 }
 
