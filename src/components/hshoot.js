@@ -68,37 +68,22 @@ const Hshoot = props => {
                     className="shadow-img"
                   />
                   <br />
-                  <h1 className="columns is-mobile texth">
-                    <p className="column is-one-third ">
-                      <p className=" montserratregular has-text-grey-light has-text-right">
-                        {' '}
-                        Photographer
-                      </p>
+                  <h1 className="columns is-mobile texth has-text-right">
+                    <div className="column is-one-third">
+                      <p className="montserratregular-gray"> Photographer</p>
 
-                      <p className="montserratmedium has-text-right ">
-                        Simple Simon Says{' '}
-                      </p>
-                    </p>
-                    <p className="column is-one-third">
-                      <p className=" montserratregular has-text-grey-light has-text-right">
-                        {' '}
-                        Photographer
-                      </p>
+                      <p className="montserratmedium">Simple Simon Says </p>
+                    </div>
+                    <div className="column is-one-third">
+                      <p className="montserratregular-gray"> Photographer</p>
 
-                      <p className="montserratmedium has-text-right">
-                        Simple Simon Says{' '}
-                      </p>
-                    </p>
-                    <p className="column is-one-third">
-                      <p className=" montserratregular has-text-grey-light has-text-right">
-                        {' '}
-                        Photographer
-                      </p>
+                      <p className="montserratmedium">Simple Simon Says </p>
+                    </div>
+                    <div className="column is-one-third">
+                      <p className="montserratregular-gray"> Photographer</p>
 
-                      <p className="montserratmedium has-text-right">
-                        Simple Simon Says{' '}
-                      </p>
-                    </p>
+                      <p className="montserratmedium">Simple Simon Says </p>
+                    </div>
                   </h1>
                 </div>
               </figure>

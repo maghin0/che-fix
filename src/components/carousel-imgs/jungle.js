@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaChevronCircleRight, FaChevronCircleLeft } from 'react-icons/fa';
 import { useStaticQuery, graphql } from 'gatsby';
+
 import Img from 'gatsby-image';
 
 import '../../assets/sass/style.scss';

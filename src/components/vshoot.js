@@ -85,30 +85,21 @@ const Vshoot = props => {
                 <div className="shoot-background"></div>
 
                 <h1 className="columns is-mobile textv has-text-left">
-                  <p className="column is-one-third">
-                    <p className=" montserratregular has-text-grey-light">
-                      {' '}
-                      Location
-                    </p>
+                  <div className="column textvspace  is-one-third">
+                    <p className=" montserratregular-gray">Location</p>
 
                     <p className=" montserratmedium "> {location} </p>
-                  </p>
-                  <p className="column textvspace is-one-third">
-                    <p className=" montserratregular has-text-grey-light">
-                      {' '}
-                      Photographer
-                    </p>
+                  </div>
+                  <div className="column textvspace is-one-third">
+                    <p className=" montserratregular-gray">Photographer</p>
 
                     <p className=" montserratmedium "> {photographer} </p>
-                  </p>
-                  <p className="column textvspace is-one-third">
-                    <p className=" montserratregular has-text-grey-light">
-                      {' '}
-                      Client
-                    </p>
+                  </div>
+                  <div className="column textvspace is-one-third">
+                    <p className=" montserratregular-gray">Client</p>
 
-                    <p className=" montserratmedium ">{client} </p>
-                  </p>
+                    <p className=" montserratmedium">{client} </p>
+                  </div>
                 </h1>
               </div>
             </div>
