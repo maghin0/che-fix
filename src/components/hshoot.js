@@ -52,7 +52,7 @@ const Hshoot = props => {
       >
         <div className="  hero-body ">
           <div className="columns is-centered ">
-            <div className=" vl-h "></div>
+            {/* <div className=" vl-h "></div> */}
             <div className="column is-7 ">
               <figure className="  image  ">
                 <div className=" che-img">
@@ -91,10 +91,10 @@ const Hshoot = props => {
           </div>
         </div>
 
-        <div className="columns is-centered">
-          <div className=" column is-10 is-mobile">
-            <figure className="  image  ">
-              <div className="image " style={{}}>
+        <div className="columns is-centered padding-image-h">
+          <div className=" column is-10 is-mobile padding-image-h">
+            <figure className="image">
+              <div className="image" style={{}}>
                 <ShootToRender />
               </div>
             </figure>
@@ -107,15 +107,15 @@ const Hshoot = props => {
               <div className="columns is-mobile ">
                 <div className=" primetimeregular column is-offset-2 is-3">
                   <h1
-                    className="  has-text-white  has-text-right is-pulled right title-abt is-size-5-mobile"
+                    className="  has-text-white  txt-laptop-t has-text-right is-pulled right title-abt is-size-5-mobile"
                     style={{ lineHeight: 1.2 }}
                   >
                     ABOUT THE SHOOT
                   </h1>
                 </div>
 
-                <div className=" column is-offset-1 is-5 montserratmedium  ">
-                  <h1 className="is-size-5 is-size-7-mobile has-text-white  has-text-justified 	">
+                <div className=" column is-offset-1 is-5  montserratmedium  ">
+                  <h1 className="is-size-5 is-size-7-mobile txt-laptop has-text-white  has-text-justified 	">
                     Taiwanese/American model. Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad

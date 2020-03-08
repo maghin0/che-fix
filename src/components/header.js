@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <>
       <section
-        className=" hero  is-fullheight hero-mobile has-background banner-bg   "
+        className=" hero  is-fullheight hero-mobile has-background banner-bg "
         // use keyframes on hero to make padding and margin bottom 0
       >
         <div className="hero-head ">

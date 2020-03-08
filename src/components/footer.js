@@ -44,7 +44,7 @@ const Footer = () => (
                           <FaInstagram />
                         </span>
                         <p
-                          className="montserratmedium is-size-4  has-text-grey-dark is-size-6-mobile"
+                          className="montserratmedium is-size-4  has-text-grey-dark footer-txt"
                           style={{ marginLeft: 10 }}
                         >
                           Im.cheyen
@@ -61,7 +61,7 @@ const Footer = () => (
                           <FaMapMarkerAlt />
                         </span>
                         <p
-                          className="montserratmedium is-size-4 has-text-grey-dark is-size-6-mobile"
+                          className="montserratmedium is-size-4 has-text-grey-dark footer-txt"
                           style={{ marginLeft: 10 }}
                         >
                           Taipei, Taiwan
@@ -78,7 +78,7 @@ const Footer = () => (
                           <IoIosPhonePortrait />
                         </span>
                         <p
-                          className="montserratmedium is-size-4 has-text-grey-dark is-size-6-mobile"
+                          className="montserratmedium is-size-4 has-text-grey-dark footer-txt"
                           style={{ marginLeft: 10 }}
                         >
                           231-6574
@@ -95,7 +95,7 @@ const Footer = () => (
                           <IoIosMail />
                         </span>
                         <p
-                          className="montserratmedium is-size-4 has-text-grey-dark is-size-6-mobile"
+                          className="montserratmedium is-size-4 has-text-grey-dark footer-txt"
                           style={{ marginLeft: 10 }}
                         >
                           Che@mail.com

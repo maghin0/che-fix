@@ -68,7 +68,7 @@ const Vshoot = props => {
       >
         <div className=" hero-body  " style={{ paddingBottom: 0 }}>
           <div className="columns is-centered">
-            <div className="vl "></div>
+            {/* <div className="vl"></div> */}
             <div className="column is-5">
               <div className="che-img  ">
                 <h1 className=" has-text-left archivo_blackregular shoot-title  is-size-4-mobile">
@@ -113,7 +113,7 @@ const Vshoot = props => {
                 <div className="has-text-white">
                   <div className="primetimeregular">
                     <h1
-                      className="column is-2 title-abt is-size-5-mobile padding-abt-title-v "
+                      className="column is-2 title-abt is-size-5-mobile txt-laptop-t padding-abt-title-v "
                       style={{ lineHeight: 1.2 }}
                     >
                       ABOUT THE SHOOT
@@ -121,7 +121,7 @@ const Vshoot = props => {
                   </div>
 
                   <div className=" column is-8 ">
-                    <h6 className=" is-size-6 is-size-7-mobile montserratmedium has-text-justified  has-text-white ">
+                    <h6 className=" is-size-6 is-size-7-mobile txt-laptop montserratmedium has-text-justified  has-text-white ">
                       Taiwanese/American model. Lorem ipsum dolor sit amet,
                       consectetur adipiscing elit, sed do eiusmod tempor
                       incididunt ut labore et dolore magna aliqua. Ut enim ad

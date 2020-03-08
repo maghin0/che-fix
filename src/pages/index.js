@@ -23,7 +23,7 @@ const IndexPage = () => (
       number="02"
       shoot="motor"
       title={'Creative Shoot'}
-      subtitle={'Photo shoot'}
+      subtitle={'Photoshoot'}
       client={' Simple Simon Says'}
       photographer={' Simple Simon Says'}
       location={' Simple Simon Says'}
