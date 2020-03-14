@@ -5,9 +5,12 @@ import Vshoot from '../components/vshoot';
 import Hshoot from '../components/hshoot';
 import Footer from '../components/footer';
 
+import '../assets/sass/menu.scss';
+
 const IndexPage = () => (
   <div className="pagebg">
     <Layout />
+
     <Vshoot
       imgName="chechina"
       number="01"

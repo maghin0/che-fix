@@ -13,6 +13,7 @@
 html {
   scrollbar-color: #f9f0f0; /* thumb and track color */
   scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 @include breakpoints(
   (
@@ -33,8 +34,8 @@ html {
       525px
     ),
     xsmall: (
-      362,
-      413px
+      300,
+      350px
     ),
     s9: (
       null,
@@ -59,6 +60,17 @@ html {
 
   &-abt {
     font-size: 4rem;
+    @include breakpoint('<=xsmall') {
+      font-size: 0.7rem !important;
+    }
+  }
+}
+.to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  :hover {
+    color: #fdc0d2;
   }
 }
 
@@ -97,7 +109,7 @@ html {
   @include breakpoint('>=xlarge') {
     font-size: 1rem !important;
     &-t {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
   }
 
@@ -113,6 +125,12 @@ html {
     &-t {
       font-size: 1.5rem;
     }
+  }
+}
+.logo {
+  display: auto;
+  @include breakpoint('<=small') {
+    display: none !important;
   }
 }
 .banner-text {
@@ -555,6 +573,87 @@ html {
   @include breakpoint('<=small') {
     font-size: 0.8rem !important;
   }
+}
+
+// burger MENU
+
+#App {
+  font-family: sans-serif;
+
+  /* Give app full page to work with */
+  height: 100vh;
+}
+
+#page-wrap {
+  text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: white;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* ----------------------------------------------

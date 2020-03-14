@@ -1,16 +1,20 @@
 import React from 'react';
 import { Link } from 'gatsby';
+
+import Menu from '../components/menu';
+
 import './../assets/sass/style.scss';
 import chelogo from '../assets/images/che-icon.png';
 
 const NavbarAll = () => (
-  <div className="hero-head is-hidden-mobile">
-    <nav className="navbar is-fixed-top ">
+  <div className="hero-head ">
+    <Menu />
+    <nav className="navbar is-transparent ">
       <div className="container">
         <div className="navbar-brand">
           <Link
             to="/"
-            className="navbar-item "
+            className="navbar-item logo "
             style={{ backgroundColor: 'hsl(0, 0%, 29%)' }}
           >
             <img src={chelogo} alt="Che's Logo" />

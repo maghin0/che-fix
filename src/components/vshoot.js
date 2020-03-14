@@ -106,7 +106,7 @@ const Vshoot = props => {
           </div>
         </div>
         <div className=" columns is-mobile is-gapless shoot-margin ">
-          <div className="column  is-6 banner-bg">
+          <div className="column  is-half-desktop is-one-third-mobile banner-bg">
             <div className="columns is-centered ">
               <div className="column is-2 "></div>
               <div className=" column  padding-abt-txt-v  ">
