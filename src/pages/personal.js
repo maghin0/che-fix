@@ -9,7 +9,7 @@ import NavbarAll from '../components/navbarall';
 const Personal = () => (
   <div className="pagebg">
     <Helmet />
-    <NavbarAll />
+    <NavbarAll pgtitle="CLOSE PEOPLE" />
     <Vshoot
       imgName="cheplanetearth"
       number="01"

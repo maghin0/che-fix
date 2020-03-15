@@ -6,10 +6,11 @@ import Menu from '../components/menu';
 import './../assets/sass/style.scss';
 import chelogo from '../assets/images/che-icon.png';
 
-const NavbarAll = () => (
+const NavbarAll = props => (
   <div className="hero-head ">
     <Menu />
     <nav className="navbar is-transparent ">
+      <div className="pgtitle archivo_blackregular ">{props.pgtitle}</div>
       <div className="container">
         <div className="navbar-brand">
           <Link
@@ -20,6 +21,7 @@ const NavbarAll = () => (
             <img src={chelogo} alt="Che's Logo" />
           </Link>
         </div>
+
         <div id="navbarMenuHeroA" className="navbar-menu">
           <div className=" montserratregular navbar-end">
             <span className="navbar-item ">

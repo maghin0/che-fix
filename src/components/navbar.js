@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { TiArrowUpThick } from 'react-icons/ti';
+import { FaArrowCircleUp } from 'react-icons/fa';
 
 import './../assets/sass/style.scss';
 
@@ -73,7 +73,7 @@ const Navbar = () => (
       </nav>
     </div>
     <a href="#nav" style={{ color: '#4a4a4a' }}>
-      <TiArrowUpThick size="40" className="to-top" style={{ zIndex: 10 }} />
+      <FaArrowCircleUp size="40" className="to-top" style={{ zIndex: 10 }} />
     </a>
   </>
 );

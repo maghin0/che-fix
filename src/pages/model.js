@@ -9,7 +9,7 @@ import NavbarAll from '../components/navbarall';
 const Model = () => (
   <div className="pagebg">
     <Helmet />
-    <NavbarAll />
+    <NavbarAll pgtitle="PHOTOSHOOTS" />
     <Vshoot
       imgName="chejungle"
       number="01"

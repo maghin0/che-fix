@@ -9,7 +9,7 @@ import NavbarAll from '../components/navbarall';
 const Travel = () => (
   <div className="pagebg">
     <Helmet />
-    <NavbarAll />
+    <NavbarAll pgtitle="DISTINATIONS" />
     <Vshoot
       imgName="chetaiwan"
       number="01"

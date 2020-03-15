@@ -68,12 +68,14 @@ html {
 .to-top {
   position: fixed;
   bottom: 1rem;
-  right: 2rem;
+  right: 1rem;
   :hover {
     color: #fdc0d2;
   }
+  @include breakpoint('<=small') {
+    display: none;
+  }
 }
-
 .myriadproregular {
   font-family: 'MyriadProRegular', sans-serif;
 }
@@ -184,6 +186,22 @@ html {
 
 .pagebg {
   background-color: $third-color;
+}
+.pgtitle {
+  color: white;
+  position: absolute;
+  padding-top: 0.7rem;
+  left: 20%;
+  letter-spacing: 0.5rem;
+  font-size: 1.2rem;
+  @include breakpoint('>=large') {
+    display: none;
+  }
+}
+.navbar-brand {
+  @include breakpoint('<=small') {
+    display: none !important;
+  }
 }
 
 .shoot-title {
@@ -320,7 +338,7 @@ html {
     min-height: 21.5vh !important;
     max-height: 27.4vh !important;
   }
-  //media for iPhone 6-8
+  //media for iPhone 12XL
   @media only screen and (device-width: 375px) and (device-height: 667px) {
     max-height: 31.8vh !important;
   }
@@ -341,13 +359,17 @@ html {
     min-height: 26.1vh !important;
     max-height: 26.1vh !important;
   }
+  //iPhone X/XS
+  @media only screen and (device-width: 375px) and (device-height: 812px) {
+    max-height: 26.1vh !important;
+  }
   // Pixel 2
   @media only screen and (device-width: 411px) and (device-height: 731px) {
     min-height: 31.8vh !important;
   }
   // Pixel XL
   @media only screen and (device-width: 411px) and (device-height: 823px) {
-    min-height: 28.2vh !important;
+    max-height: 28.2vh !important;
   }
   //Laptop with touch
   @media only screen and (device-width: 1280px) and (device-height: 950px) {
