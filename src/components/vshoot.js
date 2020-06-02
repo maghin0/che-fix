@@ -12,6 +12,8 @@ const Vshoot = props => {
   const client = props.client;
   const photographer = props.photographer;
   const location = props.location;
+  const paragraphone = props.paragraphone;
+  const paragraphtwo = props.paragraphtwo;
 
   var type = props.shoot;
   const ShootToRender = Shoots[type];
@@ -72,7 +74,7 @@ const Vshoot = props => {
             <div className="column is-5">
               <div className="che-img  ">
                 <h1 className=" has-text-left archivo_blackregular shoot-title  is-size-4-mobile">
-                  {title}{' '}
+                  {title}
                   <p className="subtitle is-size-5-mobile"> {subtitle}</p>
                 </h1>
                 <h1 className=" archivo_blackregular snumber is-size-2-mobile">
@@ -122,18 +124,11 @@ const Vshoot = props => {
 
                   <div className=" column is-8 ">
                     <h6 className=" is-size-6 is-size-7-mobile txt-laptop montserratmedium has-text-justified  has-text-white ">
-                      Taiwanese/American model. Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad
-                      minim veniam, quis nostrud.
+                      {paragraphone}
                       <br />
                       <br />
-                      Exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat. Duis aute irure dolor in reprehenderit in
-                      voluptate velit esse cillum dolore eu fugiat nulla
-                      pariatur. Excepteur sint occaecat cupidatat non proident,
-                      sunt in culpa qui officia deserunt mollit anim id est
-                      laborum.
+
+                      {paragraphtwo}
                     </h6>
                   </div>
                 </div>

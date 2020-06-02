@@ -6,8 +6,16 @@ import Shoots from './carousel-imgs/shoots';
 import './../assets/sass/style.scss';
 
 const Hshoot = props => {
-  var type = props.shoot;
+  const number = props.number;
+  const title = props.title;
+  const subtitle = props.subtitle;
+  const client = props.client;
+  const photographer = props.photographer;
+  const location = props.location;
+  const paragraphone = props.paragraphone;
+  const paragraphtwo = props.paragraphtwo;
 
+  var type = props.shoot;
   const ShootToRender = Shoots[type];
   const imgName = props.imgName;
   const data = useStaticQuery(graphql`
@@ -57,10 +65,10 @@ const Hshoot = props => {
               <figure className="  image  ">
                 <div className=" che-img">
                   <h1 className=" has-text-left archivo_blackregular shoot-title ">
-                    Blanchard Tribal <p className="subtitle">Photoshoot</p>
+                    {title} <p className="subtitle">{subtitle}</p>
                   </h1>
                   <h1 className=" archivo_blackregular snumber-h is-size-2-mobile ">
-                    {props.number}
+                    {number}
                   </h1>
 
                   <Img
@@ -72,17 +80,17 @@ const Hshoot = props => {
                     <div className="column is-one-third">
                       <p className="montserratregular-gray"> Photographer</p>
 
-                      <p className="montserratmedium">Simple Simon Says </p>
+                      <p className="montserratmedium"> {photographer}</p>
                     </div>
                     <div className="column is-one-third">
-                      <p className="montserratregular-gray"> Photographer</p>
+                      <p className="montserratregular-gray"> Location</p>
 
-                      <p className="montserratmedium">Simple Simon Says </p>
+                      <p className="montserratmedium"> {location}</p>
                     </div>
                     <div className="column is-one-third">
-                      <p className="montserratregular-gray"> Photographer</p>
+                      <p className="montserratregular-gray"> Client</p>
 
-                      <p className="montserratmedium">Simple Simon Says </p>
+                      <p className="montserratmedium">{client} </p>
                     </div>
                   </h1>
                 </div>
@@ -116,15 +124,10 @@ const Hshoot = props => {
 
                 <div className=" column is-offset-1 is-5  montserratmedium  ">
                   <h1 className="is-size-5 is-size-7-mobile txt-laptop has-text-white  has-text-justified 	">
-                    Taiwanese/American model. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud. <br />
-                    Exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    {paragraphone}
+                    <br />
+
+                    {paragraphtwo}
                   </h1>
                 </div>
               </div>
