@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
+import { FaArrowCircleUp } from 'react-icons/fa';
 import Menu from '../components/menu';
 
 import './../assets/sass/style.scss';
@@ -73,6 +73,9 @@ const NavbarAll = props => (
         </div>
       </div>
     </nav>
+    <a href="#nav" style={{ color: '#4a4a4a' }}>
+      <FaArrowCircleUp size="40" className="to-top" style={{ zIndex: 10 }} />
+    </a>
   </div>
 );
 
